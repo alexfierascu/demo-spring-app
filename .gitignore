@@ -1,4 +1,4 @@
-HELP.md
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
@@ -29,3 +29,16 @@ build/
 
 ### VS Code ###
 .vscode/
+src/main/java/com/example/demo/web/
+src/main/resources/static/
+src/main/resources/templates/
+
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
