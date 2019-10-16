@@ -10,12 +10,13 @@ import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
 
+
 @Transactional
 @Repository
 public interface IncomeRepository extends JpaRepository<Income, Integer> {
 
-    @Modifying
-    @Query(nativeQuery = true, value = "DELETE FROM income WHERE ID = :id")
-    public void deleteById(@Param("id") Integer id);
+  @Modifying
+  @Query(nativeQuery = true, value = "DELETE FROM income WHERE ID = :id")
+  void deleteById (@Param("id") Integer id);
 }
 
